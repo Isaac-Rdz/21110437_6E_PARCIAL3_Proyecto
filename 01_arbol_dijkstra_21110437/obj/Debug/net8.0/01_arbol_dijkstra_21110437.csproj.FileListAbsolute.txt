@@ -1,0 +1,14 @@
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\bin\Debug\net8.0\01_arbol_dijkstra_21110437.exe
+C:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\bin\Debug\net8.0\01_arbol_dijkstra_21110437.deps.json
+C:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\bin\Debug\net8.0\01_arbol_dijkstra_21110437.runtimeconfig.json
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\bin\Debug\net8.0\01_arbol_dijkstra_21110437.dll
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\bin\Debug\net8.0\01_arbol_dijkstra_21110437.pdb
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.AssemblyInfoInputs.cache
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.AssemblyInfo.cs
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.csproj.CoreCompileInputs.cache
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.dll
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\refint\01_arbol_dijkstra_21110437.dll
+c:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.pdb
+C:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\01_arbol_dijkstra_21110437.genruntimeconfig.cache
+C:\Users\PC_042\Desktop\Nueva carpeta\p3\01_arbol_dijkstra_21110437\obj\Debug\net8.0\ref\01_arbol_dijkstra_21110437.dll
