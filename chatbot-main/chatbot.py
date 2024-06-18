@@ -2,19 +2,24 @@ import random
 import json
 import pickle
 import numpy as np
+
+import nltk
 from nltk.stem import WordNetLemmatizer
+
 from tf_keras.models import load_model
+
 lemmatizer = WordNetLemmatizer()
 
 #Importamos los archivos generados en el código anterior
-intents = json.loads(open('intents.json',"r",encoding="utf-8").read())
+intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.h5')
 
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
-    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    sentence_words = nltk.word_tokenize(sentence)
+    sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
     return sentence_words
 
 #Convertimos la información a unos y ceros según si están presentes en los patrones
@@ -32,22 +37,25 @@ def bag_of_words(sentence):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    error_threshold = 0.25
-    results = [{i,r}for i, r in enumerate(res)if r>error_threshold]
-    results.sort(key=lambda x: x[1],reverse = True)
-    return_list = []
-    for r in results:
-        return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
-    return return_list
- 
+    max_index = np.where(res ==np.max(res))[0][0]
+    category = classes[max_index]
+    return category
+
 #Obtenemos una respuesta aleatoria
-def get_response(intents_list, intents_json):
-    tag = intents_list[0]["intent"]
+def get_response(tag, intents_json):
     list_of_intents = intents_json['intents']
+    result = ""
     for i in list_of_intents:
         if i["tag"]==tag:
             result = random.choice(i['responses'])
             break
     return result
 
+def respuesta(message):
+    ints = predict_class(message)
+    res = get_response(ints, intents)
+    return res
 
+while True:
+    message = input()
+    print(respuesta(message))
