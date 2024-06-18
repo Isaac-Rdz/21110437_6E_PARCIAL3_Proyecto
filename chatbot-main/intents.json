@@ -1,0 +1,29 @@
+{"intents":[
+    {
+        "tag": "saludo",
+        "patterns": ["hola", "buen dia", "Hola", "Buen dia"],
+        "responses": ["Hola!"]
+    },
+    {
+        "tag": "menu0",
+        "patterns": ["pedido"],
+        "responses": ["su pedido llegara en 3 dias"]
+    },
+    {
+        "tag": "menu1",
+        "patterns": ["ayuda"],
+        "responses": ["en un momento la atedera mi compañero"]
+    },
+    {
+        "tag": "menu2",
+        "patterns": ["entrega"],
+        "responses": ["su pedido llegara en 5 dias"]
+    },
+    {
+        "tag": "menu3",
+        "patterns": ["sugerencias"],
+        "responses": ["en un momento la atedera mi compañero"]
+    }
+]
+
+}
