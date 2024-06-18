@@ -2,10 +2,8 @@ import random
 import json
 import pickle
 import numpy as np
-import nltk
 from nltk.stem import WordNetLemmatizer
 from tf_keras.models import load_model
-
 lemmatizer = WordNetLemmatizer()
 
 #Importamos los archivos generados en el código anterior
@@ -16,7 +14,6 @@ model = load_model('chatbot_model.h5')
 
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
-    sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
     return sentence_words
 
